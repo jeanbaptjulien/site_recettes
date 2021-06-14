@@ -41,9 +41,11 @@
     /* Permet d'appliquer un style uniquement au div "contenu" */
     div.contenu {
         background-color:#ffffff;
-        margin: 0px 10% 80px 10%; /* Haut droite bas gauche */
-        padding: 30px; /* Marge intérieur */
-        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); /* Permet de gérer l'ombre */
+        margin: 40px 8px 40px 8px; /* Haut droite bas gauche */
+        padding: 0px 8px 20px 8px; /* Marge intérieur */
+
+        box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1); /* Permet de gérer l'ombre */
+        overflow: visible;
     }
 
     h1 {
@@ -93,7 +95,7 @@
     }
 
     div.colonne {
-        width: 45%;
+        width: 100%;
         margin-top: 20px;
     }
 
@@ -107,11 +109,6 @@
 
     div.colonne1{
         display: inline-block;
-        margin-right: 10%;
-    }
-
-    div.colonne2{
-        float: right;
     }
 
     div.ingredients p{
@@ -150,4 +147,46 @@
 
     table.preparation tr{
         min-height: 40px;
+    }
+
+    /* STYLE POUR DESKTOP */
+    /* Permet de faire du conditionnement sur la taille de l'écran i.e. si dessous pour l'ordinateur */
+    @media only screen and (min-width: 768px) {
+        div.contenu {
+            background-color:#ffffff;
+            margin: 0px 10% 80px 10%; /* Haut droite bas gauche */
+            padding: 30px; /* Marge intérieur */
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); /* Permet de gérer l'ombre */
+            min-width: 350px;
+        }
+
+                /* Pour aligner mon texte data */
+        table.info td{
+            font-size: 14px;
+        }
+
+        table.info th{
+            font-size: 16px;
+        }
+
+        div.colonne {
+            width: 45%;
+        }
+
+        div.colonne1{
+            margin-right: 10%;
+        }
+    
+        div.colonne2{
+            float: right;
+        }
+    }
+
+    /* STYLE ÉCRAN LARGE */
+    @media only screen and (min-width: 900px) {
+        div.contenu {
+            margin-left: auto;
+            margin-right: auto;
+            width: 645px;
+        }
     }
