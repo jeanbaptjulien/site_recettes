@@ -1,0 +1,153 @@
+    * {
+        overflow: auto;
+    }
+
+    body {
+        background-color: #8ba1bb;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Permet d'appliquer un style uniquement à l'id "categorie" */
+    p.categorie {
+        background-color: #000000;
+        color: #ffffff;
+        display: inline-block;
+        padding: 8px 18px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    div.categorie {
+        /*background-color: blue;*/
+        text-align: center;
+        margin-bottom: -18px;
+        margin-top: 60px;
+    }
+
+    p.description {
+        text-align: center;
+        max-width: 600px;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .centre {
+        text-align: center; /* Ne s'applique qu'à du texte, pas des images */
+        width: 100%; /* Pour avoir mon image qui prenne toute la taille de la fenêtre */
+    }
+
+    /* Permet d'appliquer un style uniquement au div "contenu" */
+    div.contenu {
+        background-color:#ffffff;
+        margin: 0px 10% 80px 10%; /* Haut droite bas gauche */
+        padding: 30px; /* Marge intérieur */
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); /* Permet de gérer l'ombre */
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    div.separateur {
+        background-color: black;
+        height: 1px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.info{
+        position: relative; 
+    }
+
+    table.info{
+        position: absolute; 
+        bottom: 0px; 
+        width: 100%; 
+        color: white;
+        background-color: #6C829DC0; 
+        height: 80px;
+    }
+
+    /* Pour aligner mon texte data */
+    table.info td{
+        text-align: center;
+        font-size: 14px;
+        vertical-align: top;
+    }
+
+    table.info th{
+        font-size: 16px;
+        vertical-align: bottom;
+        padding-bottom: 4px;
+    }
+
+    img.info {
+        display: block;
+        max-height: 400px;
+        object-fit: cover; /* Permet de donner l'impression que ça zoome sur l'image */
+        min-height: 200px; /*  */
+        background-color: lightgray;
+    }
+
+    div.colonne {
+        width: 45%;
+        margin-top: 20px;
+    }
+
+    div.colonne h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15   px;
+        border-bottom: 5px solid #6C829D;
+        padding-bottom: 5px;
+    }
+
+    div.colonne1{
+        display: inline-block;
+        margin-right: 10%;
+    }
+
+    div.colonne2{
+        float: right;
+    }
+
+    div.ingredients p{
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid lightgray;
+        padding: 8px 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    table.preparation p.numero{
+        background-color: #6C829D;
+        color: #ffffff;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 4px; /* Va m'aider à mettre une marge interne en haut pour faire du centrage vertical */
+        box-sizing: border-box; /* Permet de lui dire qu'il conservera la taille de 25px 
+                                    et qu'il n'ajoutera pas la valeur padding-top*/
+        border-radius: 50% ; /* Permet de faire des cercles quand on fait 50% */
+        margin: 0px;
+    }
+
+    table.preparation td{
+        vertical-align: top;
+    }
+
+    table.preparation td.preparation_etape{
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    table.preparation tr{
+        min-height: 40px;
+    }
